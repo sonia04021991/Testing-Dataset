@@ -1,0 +1,1902 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://hxl.humanitarianresponse.info/ns/"
+     xml:base="http://hxl.humanitarianresponse.info/ns/"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:hxl="http://hxl.humanitarianresponse.info/ns/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:label="http://www.wasab.dk/morten/2004/03/label#">
+    <owl:Ontology rdf:about="http://hxl.humanitarianresponse.info/ns/">
+        <dc:abstract xml:lang="en">&lt;p&gt;Draft specification of the Humanitarian eXchange Language (HXL) standard. &lt;span class=&apos;label label-warning&apos;&gt;This vocabulary specification is currently &lt;b&gt;under development&lt;/b&gt; and may change at any time without notice.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;The purpose of HXL is to facilitate data exchange within the humanitarian domain. It provides a core domain model that has been created bottom-up by inspecting a broad range of systems in use with different humanitarian organisations. As needs vary widely across organisations in this domain, this vocabulary does &lt;em&gt;not&lt;/em&gt; intend to be complete; in fact, it is the smallest common denominator. Any organisations that wish to publish &lt;em&gt;full&lt;/em&gt; exports of their data can do so by extending this domain model with application- or organisation-specific models that reflect their internal data models (which may already be formalised in an XML schema or database schema).&lt;/p&gt;</dc:abstract>
+        <dc:creator rdf:resource="http://hxl.humanitarianresponse.info/data/persons/unocha/carsten_kessler"/>
+        <dc:creator rdf:resource="http://hxl.humanitarianresponse.info/data/persons/unocha/cj_hendrix"/>
+        <dc:creator rdf:resource="http://hxl.humanitarianresponse.info/data/persons/unocha/minu_limbu"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-01-24</dc:date>
+        <dc:license xml:lang="en">&lt;a href=&apos;http://creativecommons.org/licenses/by/3.0/&apos;&gt;&lt;img src=&apos;cc.png&apos; align=&apos;right&apos; /&gt;&lt;/a&gt;The HXL vocabulary is published under a Creative Commons Attribution license (&lt;a href=&apos;http://creativecommons.org/licenses/by/3.0/&apos;&gt;CC BY 3.0&lt;/a&gt;).</dc:license>
+        <dc:replaces rdf:resource="http://hxl.humanitarianresponse.info/ns-2013-01-07/"/>
+        <dc:title xml:lang="en">Humanitarian eXchange Language (HXL) Situation and Response Standard</dc:title>
+        <rdfs:seeAlso xml:lang="en">For further information about the HXL project, see &lt;a href=&apos;https://sites.google.com/site/hxlproject/&apos;&gt;https://sites.google.com/site/hxlproject/&lt;/a&gt;.</rdfs:seeAlso>
+        <skos:changeNote>&lt;b&gt;Changes on January 24, 2013:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&apos;#APL&apos;&gt;hxl:APL&lt;/a&gt; is not a top level concept any more.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on January 7, 2013:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Some properties are now mandatory, such as &lt;a href=&apos;#atLocation&apos;&gt;atLocation&lt;/a&gt;. Formally, they have an &lt;a href=&apos;http://www.w3.org/TR/owl-ref/#minCardinality-def&apos;&gt;owl:minCardinality&lt;/a&gt; of 1, which means that all things for which the atLocation property applies are at least at one location; however, this location may be unknown. Mandatory properties are marked with a checkmark &lt;i class=&apos;icon-ok-sign&apos;&gt;&lt;/i&gt;.&lt;/li&gt;&lt;li&gt;hxl:LocatedBaseClass has been introduced as a subclass of hxl:BaseClass. It is the superclass for all located things.&lt;/li&gt;&lt;li&gt;Various smaller bug fixes.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on December 27, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Definition of the &lt;a href=&apos;#pcode&apos;&gt;p-code&lt;/a&gt; property updated.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on December 20, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Property &lt;a href=&apos;#operatedBy&apos;&gt;operatedBy&lt;/a&gt; introduced to state that a system producing HXL is operated by an organisation or person.&lt;/li&gt;&lt;li&gt;Description of the &lt;a href=&apos;#pcode&apos;&gt;pcode&lt;/a&gt; property extended to explain the correct use for country codes.&lt;/li&gt;&lt;li&gt;More elobrate descriptions added for the top level concepts that are not formally defined yet.&lt;/li&gt;&lt;li&gt;Class &lt;em&gt;TotalPopulation&lt;/em&gt; removed; the description of &lt;a href=&apos;#personCount&apos;&gt;personCount&lt;/a&gt; has been extended accordingly.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on November 22, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The URI of the GeoSPARQL ontology has been changed to be consistent with our data (even though the previous URI was also working).&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on November 14, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Added &lt;a href=&apos;#PopPlaceClass&apos;&gt;hxl:PopPlaceClass&lt;/a&gt;, &lt;a href=&apos;#inClass&apos;&gt;hxl:inClass&lt;/a&gt;, &lt;a href=&apos;#popPlaceClassTitle&apos;&gt;hxl:popPlaceClassTitle&lt;/a&gt;, &lt;a href=&apos;#popPlaceClassNumber&apos;&gt;hxl:popPlaceClassNumber&lt;/a&gt;, and &lt;a href=&apos;#popPlaceClassCountry&apos;&gt;hxl:popPlaceClassCountry&lt;/a&gt; to handle the concept of rankings among populated places.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on November 6, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&apos;#atLocation&apos;&gt;hxl:atLocation&lt;/a&gt; is a transitive property now to make queries along the administrative unit hierarchy easier.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on October 29, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Class &lt;a href=&apos;#Source&apos;&gt;hxl:Source&lt;/a&gt; added as a superclass for all things that can be sources of information (people, organisations, systems, etc.).&lt;/li&gt;&lt;li&gt;Class &lt;a href=&apos;#System&apos;&gt;hxl:System&lt;/a&gt; added as a new subclass hxl:Source. hxl:HXLer and hxl:Organisation are now also subclasses of hxl:Source.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on October 9, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Class hxl:ReportingPeriod and its hxl:start and hxl:end properties have been removed; use &lt;a href=&apos;#validOn&apos;&gt;hxl:validOn&lt;/a&gt; in the future.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on September 28, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The set of top level concepts has been adjusted for our upcoming demo.&lt;/li&gt;&lt;li&gt;Preferred labels for populations changed to the plural variants.&lt;/li&gt;&lt;li&gt;The different validity properties have been replaced by &lt;a href=&apos;#validOn&apos;&gt;hxl:validOn&lt;/a&gt;. This ensures a proper distinction between actual data and their metadata, which have to be attached to the enclosing data container.&lt;/li&gt;&lt;li&gt;The preferred label of &lt;a href=&apos;#Population&apos;&gt;hxl:Population&lt;/a&gt; has been changed to Population Group.&lt;/li&gt;&lt;li&gt;Property &lt;a href=&apos;#ftsId&apos;&gt;hxl:ftsId&lt;/a&gt; has been added.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on September 11, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The properties &lt;i&gt;validityStart&lt;/i&gt; and &lt;i&gt;validityEnd&lt;/i&gt; were changed to &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns#validFrom&apos;&gt;validFrom&lt;/a&gt; and &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns#validUntil&apos;&gt;validUntil&lt;/a&gt;. These formerly had &lt;a href &apos;http://hxl.humanitarianresponse.info/ns#Baseclass&gt;Baseclass&lt;/a&gt; as their domain, but these have been changed so that they only apply to those classes which need validity dates.&lt;/li&gt;&lt;li&gt;The properties &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns#start&apos;&gt;start&lt;/a&gt; and &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns#end&apos;&gt;end&lt;/a&gt; have also had their domains changed from &lt;a href &apos;http://hxl.humanitarianresponse.info/ns#Baseclass&apos;&gt;Baseclass&lt;/a&gt; to those classes which need start and end dates.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on September 3, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The property &lt;i&gt;currentLocation&lt;/i&gt; has been removed.  Use &lt;a href=&apos;#atLocation&apos;&gt;atLocation&lt;/a&gt; instead.&lt;/li&gt;&lt;li&gt;The properties &lt;a href=&apos;#featureName&apos;&gt;featureName&lt;/a&gt;, &lt;a href=&apos;#featureAltName&apos;&gt;featureAltName&lt;/a&gt;, and &lt;a href=&apos;#featureRefName&apos;&gt;featureRefName&lt;/a&gt; have been made subproperties of &lt;a href=&apos;#title&apos;&gt;title&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;The property &lt;i&gt;inDisplacedLocationType&lt;/i&gt; has been replaced with &lt;a href=&apos;#displacedLocationType&apos;&gt;displacedLocationType&lt;/a&gt; which now is in the domain of &lt;a href=&apos;#APL&apos;&gt;Affected Population Location&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on August 29, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Typo fixed: hxl:AFL replaced by hxl:APL.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on August 22, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The class &lt;i&gt;Camp&lt;/i&gt; has been renamed to &lt;a href=&apos;#APL&apos;&gt;Affected Population Location&lt;/a&gt; to comply with official terminology.&lt;/li&gt;&lt;li&gt;The class &lt;a href=&apos;#Country&apos;&gt;Country&lt;/a&gt; is not a subclass of &lt;a href=&apos;http://purl.org/ontology/places#Country&apos;&gt;http://purl.org/ontology/places#Country&lt;/a&gt; any more, as the HXL definition of a country is different.&lt;/li&gt;&lt;li&gt;The class GlideNumber has been removed. The property &lt;a href=&apos;#hasGLIDEnumber&apos;&gt;hasGLIDEnumber&lt;/a&gt; now links an &lt;a href=&apos;#Emergency&apos;&gt;Emergency&lt;/a&gt; directly to the corresponding GLIDE number, represented as a String.&lt;/li&gt;&lt;li&gt;Plural for all classes added.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on August 21, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&apos;#currentLocation&apos;&gt;currentLocation&lt;/a&gt; is now a subproperty of &lt;a href=&apos;#atLocation&apos;&gt;atLocation&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;The subclasses of &lt;a href=&apos;#SexCategory&apos;&gt;SexCategory&lt;/a&gt; (male, female, etc.) have been removed. They will be moved to a reference list on the triple store as instances of SexCategory.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on August 6, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Removed property hxl:inAdminUnit, which was formerly used to make the link between a &lt;a href=&apos;#AdminUnit&apos;&gt;hxl:AdminUnit&lt;/a&gt; and its parent in the hierarchy of administrative units.  We now use the more generic &lt;a href=&apos;#atLocation&apos;&gt;hxl:atLocation&lt;/a&gt; property (inherited from the HXLBaseClass) for this.&lt;/li&gt;&lt;li&gt;Modified defintion of &lt;a href=&apos;#Country&apos;&gt;hxl:Country&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Modified definitions of &lt;a href=&apos;#AgeGroup&apos;&gt;hxl:AgeGroup&lt;/a&gt; and &lt;a href=&apos;#DisplacedLocationType&apos;&gt;hxl:DisplacedLocationType&lt;/a&gt; to reflect the requirement that specific instances must have names that do not start with numbers.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on August 2, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Link to date/time standard document added to &lt;a href=&apos;#metadataSection&apos;&gt;Metadata Section&lt;/a&gt;.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on July 13, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Added more strict datatypes for all properties that point to numbers (xsd:int) or dates (xsd:date).&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on July 12, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&apos;#atLocation&apos;&gt;atLocation&lt;/a&gt; has been turned into a generic property.&lt;/li&gt;&lt;li&gt;All classes and properties related to admin dataset versions have been deleted. Versioning and validity dates should be handled through data container metadata.&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on July 11, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Plurals added for HXL classes, using the &lt;a href=&apos;http://www.wasab.dk/morten/2004/03/label&apos;&gt;label vocabulary&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&apos;#reportCategory&apos;&gt;reportCategory&lt;/a&gt; has been moved to the metadata section.&lt;/li&gt;&lt;li&gt;For consistency, &lt;em&gt;Sex&lt;/em&gt; has been renamed &lt;a href=&apos;#SexCategory&apos;&gt;Sex Category&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Property &lt;a href=&apos;#relatedInfo&apos;&gt;relatedInfo&lt;/a&gt; added.&lt;/li&gt;&lt;li&gt;The date and time properties have been moved into the &lt;a href=&apos;#metadataSection&apos;&gt;metadata section&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on July 5, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;ReportCategory and ReportCategorySet have been moved to the &lt;a href=&apos;#metadataSection&apos;&gt;metadata section&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Use of RDF containers is now properly documented for all subclasses of rdf:Bag.&lt;/li&gt;&lt;li&gt;Class &lt;a href=&apos;#HXLer&apos;&gt;HXLer&lt;/a&gt; has been introduced.&lt;/li&gt;&lt;li&gt;Property &lt;em&gt;yperiod of validity&lt;/em&gt; has been replaced by &lt;a href=&apos;#validityStart&apos;&gt;validityStart&lt;/a&gt; and &lt;a href=&apos;#validityEnd&apos;&gt;validityEnd&lt;/a&gt;. &lt;/li&gt;&lt;/ol&gt;&lt;b&gt;Changes on July 4, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;The gelolocation section now contains only those classes and properties that are specific to HXL. They extend the classes and properties (esp. topological relations) introduced by &lt;a href=&apos;http://www.opengeospatial.org/standards/geosparql&apos;&gt;OGC&apos;s GeoSPARQL standard&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;The documentation now contains all domains and ranges inherited from super-/subclasses for each class.&lt;/li&gt;&lt;li&gt;&lt;a href=&apos;#validityDate&apos;&gt;hxl:validityDate&lt;/a&gt; introduced.&lt;/li&gt;&lt;li&gt;Property &lt;a href=&apos;#aboutEmergency&apos;&gt;aboutEmergency&lt;/a&gt; introduced to link a DataContainer to the Emergency it contains data about.&lt;/li&gt;&lt;li&gt;All sets in HXL are now subclasses of rdf:Bag, so that we can get rid of our membership functions.&lt;/li&gt;&lt;li&gt;Introduced &lt;a href=&apos;#ReportCategory&apos;&gt;ReportCategory&lt;/a&gt;, &lt;a href=&apos;#reportCategory&apos;&gt;reportCategory&lt;/a&gt;, and &lt;a href=&apos;#ReportCategorySet&apos;&gt;ReportCategorySet&lt;/a&gt; to define the report category for a specific DataContainer and collect the possible ReportCategories for a specific Emergency in a set.&lt;/li&gt;&lt;li&gt;Generic properties &lt;a href=&apos;#comment&apos;&gt;comment&lt;/a&gt;, &lt;a href=&apos;#title&apos;&gt;title&lt;/a&gt; and &lt;a hre=&apos;#description&apos;&gt;description&lt;/a&gt; introduced.&lt;/li&gt;&lt;/ol&gt;&lt;/b&gt;&lt;b&gt;Changes on July 3, 2012:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Versioning: We will use the URI &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns&apos;&gt;http://hxl.humanitarianresponse.info/ns&lt;/a&gt; for all future versions of this vocabulary from now on. Previous versions can be found &lt;a href=&apos;http://hxl.humanitarianresponse.info/ns-2012-06-14/&apos;&gt;here&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&apos;#Country&apos;&gt;hxl:Country&lt;/a&gt; is now a subclass of &lt;a href=&apos;http://purl.org/ontology/places#Country&apos;&gt;http://purl.org/ontology/places#Country&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&apos;#Thing&apos;&gt;hxl:BaseClass&lt;/a&gt; has been introduced as an abstract base class. Every other class in HXL is a subclass of hxl:BaseClass. This allows us to define generic properties for all classes in HXL.&lt;/li&gt;&lt;li&gt;Class &lt;em&gt;Activity&lt;/em&gt; has been removed.&lt;/li&gt;&lt;li&gt;Properties &lt;em&gt;containsPrimaryData&lt;/em&gt; and &lt;em&gt;containsSecondaryData&lt;/em&gt; have been removed.&lt;li&gt;Properties &lt;em&gt;displacedLocationSetTitle&lt;/em&gt;, &lt;em&gt;displacedLocationTypeSetDescription&lt;/em&gt;, &lt;em&gt;ageGroupSetDescription&lt;/em&gt;, &lt;em&gt;ageGroupSetTitle&lt;/em&gt;, and &lt;em&gt;populationDescription&lt;/em&gt; have been removed. Use the generic title / description properties instead.&lt;/li&gt;&lt;/ol&gt;</skos:changeNote>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Title -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#Title"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#comment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#date -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#date">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#description -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#description">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureAltName -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureAltName">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureName -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureName">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureRefName -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureRefName">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#title -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#title">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#topLevelConcept -->
+
+    <owl:AnnotationProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#topLevelConcept"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.wasab.dk/morten/2004/03/label#plural -->
+
+    <owl:AnnotationProperty rdf:about="http://www.wasab.dk/morten/2004/03/label#plural"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#aboutEmergency -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#aboutEmergency">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#hasDataContainer"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#Emergency"/>
+        <rdfs:comment xml:lang="en">Links a DataContainer to the corresponding Emergency it contains data about.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">about emergency</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevel -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevel">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountryOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountry -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountry">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountryOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountryOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#affectedBy">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#affects"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#Emergency"/>
+        <rdfs:comment xml:lang="en">States that a Population is affacted by an Emergency.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">affected by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#affects -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#affects"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ageGroup -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#ageGroup">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#ageGroupOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#AgeGroup"/>
+        <rdfs:comment>Specifies the age group of the population.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel>age group</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ageGroupOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#ageGroupOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#approvalLevelOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#approvalLevelOf">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#approvedAtLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#approvedAtLevel -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#approvedAtLevel">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#ApprovalLevel"/>
+        <rdfs:comment xml:lang="en">A container can have approval at different levels, which may in turn indicate for which kind of analyses the data in this container is fit.&lt;/em&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">approved at level</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#approvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#approvedBy">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#approves"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#HXLer"/>
+        <rdfs:comment xml:lang="en">Link from a container to the person or organisation who has &apos;lifted&apos; it to the current approvalLevel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">approved by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#approves -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#approves"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#atLevel -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#atLevel">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#levelOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnit"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel"/>
+        <rdfs:comment>Specifies the level for an administrative unit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">at level</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#atLocation">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#locationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">Specififes the location for things like emergencies, projects, or affected population locations. This should be an administrative unit or other feature established in the HXL data repositiry (generally an Administrative Unit, Populated Place, or Affected Population Location agreed by the IM Working Group in a given emergency). It is also used to define the hierarchy of administrative units with each lower level admin unit requiring a hxl:atLocation property specifying the next higher level admin unit to which it belongs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">at Location</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#displacedLocationType -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#displacedLocationType">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#displacedLocationTypeOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#APL"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#DisplacedLocationType"/>
+        <rdfs:comment xml:lang="en">Specifies the type of living situation in which a population is living.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">displaced location type</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#displacedLocationTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#displacedLocationTypeOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#hasDataContainer -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#hasDataContainer"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#isGLIDEnumberOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Emergency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#inClass -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#inClass">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#PopulatedPlace"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#PopPlaceClass"/>
+        <rdfs:comment xml:lang="en">Specifies the class to which a populated place feature belongs. The classification systems vary country to country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">in class</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#isGLIDEnumberOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#isGLIDEnumberOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#levelOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#levelOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#locationOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#locationOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#nationality -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#nationality">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#nationalityOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#Country"/>
+        <rdfs:comment>This item generally only applies to populations displaced across international borders and contains the nationality of the population being reported.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">nationality</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#nationalityOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#nationalityOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#operatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#operatedBy">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#System"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#HXLer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#organisationHomepage -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#organisationHomepage">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#organisationHomepageOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment>States the website of a given organisation. &lt;small&gt;Term origin: FTS.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <skos:prefLabel>organisation homepage</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#organisationHomepageOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#organisationHomepageOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#placeOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#placeOfOrigin">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#placeOfOriginOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Displaced"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment>This attribute only applies to Displaced and its subclasses. It should include p-coded location from which the population being reported moved as a result of the emergency.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">place of origin</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#placeOfOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#placeOfOriginOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#popPlaceClassCountry -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassCountry">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#PopPlaceClass"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#Country"/>
+        <rdfs:comment xml:lang="en">Relates a populated place class to the country (or countries) that it can be used in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">populated place class country</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#relatedInfo -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#relatedInfo">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment>Provides a link to a website with further information related to the data in the data container.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel>related information</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#reportCategory -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#reportCategory">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#reportCategoryOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#ReportCategory"/>
+        <rdfs:comment>Specifies the ReportCategory of a DataContainer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel>report category</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#reportCategoryOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#reportCategoryOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#reportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#reportedBy">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#reporting"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#HXLer"/>
+        <rdfs:comment xml:lang="en">The reporting person or organization - not necessarily involved in the aid activity itself, though in practice it often will be a donor or appealing agency.  &lt;br /&gt;&lt;small&gt;Term origin: IATI.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel xml:lang="en">reported by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#reporting -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#reporting"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#sexCategory -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#sexCategory">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#sexCategoryOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#SexCategory"/>
+        <rdfs:comment>Specifies the sex of the population.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <skos:prefLabel>sex category</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#sexCategoryOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#sexCategoryOf"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#source -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#source">
+        <owl:inverseOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#sourceOf"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://hxl.humanitarianresponse.info/ns/#Source"/>
+        <rdfs:comment xml:lang="en">The organisation(s) providing the information. Note that in some cases, if the source is the same for all records, this item could be reported as metadata for the dataset rather than for each record.&lt;br /&gt;&lt;small&gt;Source: Humanitarian profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">source</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#sourceOf -->
+
+    <owl:ObjectProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#sourceOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#abbreviation">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountry">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelNumber">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelTitle">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#commonTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#commonTitle">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Situation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#count -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#count">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#date -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#date">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#description -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#description">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureAltName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureAltName">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureName">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureRefName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#featureRefName">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#fromAge -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#fromAge">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AgeGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ftsId -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#ftsId">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#householdCount -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#householdCount">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#count"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#method -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#method">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgDisplayName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#orgDisplayName">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#orgName">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgNativeName -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#orgNativeName">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#pcode -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#pcode">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#personCount -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#personCount">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#count"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#popPlaceClassNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassNumber">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#PopPlaceClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#popPlaceClassTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassTitle">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#PopPlaceClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#title -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#title">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#toAge -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#toAge">
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#AgeGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#validOn -->
+
+    <owl:DatatypeProperty rdf:about="http://hxl.humanitarianresponse.info/ns/#validOn">
+        <rdfs:subPropertyOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#date"/>
+        <rdfs:domain rdf:resource="http://hxl.humanitarianresponse.info/ns/#DataContainer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#APL -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#APL">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A site providing shelter for an affected population (such as refugees). Examples include camps and temporary settlements. &lt;br /&gt;&lt;small&gt;This class has been added for demo purposes only, a proper definition will be provided in subsequent versions of the vocabulary.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Affected Population Location</skos:prefLabel>
+        <label:plural xml:lang="en">Affected Population Locations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#AdminUnit -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#AdminUnit">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">Administrative units can include coutries, regions, cities, etc. The hierarchy of administrative units can vary from country to country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Administrative Unit</skos:prefLabel>
+        <label:plural xml:lang="en">Administrative Units</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#AdminUnitLevel">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment xml:lang="en">The specific administrative unit levels can vary from country to country. Administrative Unit Level 0 is a country – in this case, hxl:Country should be used.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Administrative Unit Level</skos:prefLabel>
+        <label:plural xml:lang="en">Administrative Unit Levels</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#AffectedPopulation -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#AffectedPopulation">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Population"/>
+        <rdfs:comment xml:lang="en">A population affected by an emergency. &lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile (&lt;em&gt;Affected&lt;/em&gt;);&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Affected Population</skos:prefLabel>
+        <label:plural xml:lang="en">Affected Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#AgeGroup -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#AgeGroup">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment>Generic class for age groups; instances should be created for actual age groups and must have an identifier that does not start with a number. Example: &lt;em&gt;Children under 5&lt;/em&gt;. Each AgeGroup should be added to at least one &lt;a href=&apos;#AgeGroupSet&apos;&gt;AgeGroupSet&lt;/a&gt; following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Age Group</skos:prefLabel>
+        <label:plural xml:lang="en">Age Groups</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#AgeGroupSet -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#AgeGroupSet">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+        <rdfs:comment xml:lang="en">Contains a set of bracketed age groups, usually defined as a standard by some authority. &lt;a href=&apos;#AgeGroup&apos;&gt;AgeGroups&lt;/a&gt; should be added to an AgeGroupSet following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Age Group Set</skos:prefLabel>
+        <label:plural xml:lang="en">Age Group Sets</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ApprovalLevel -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#ApprovalLevel">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment>Instances of this class define fixed levels of approval in the HXL data repository.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">Approval Level</skos:prefLabel>
+        <label:plural xml:lang="en">Approval Levels</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#BaseClass -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#BaseClass">
+        <rdfs:comment xml:lang="en">Abstract base class. Any other class in HXL is a subclass of hxl:BaseClass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Casualty -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Casualty">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#AffectedPopulation"/>
+        <rdfs:comment>Examples: &lt;em&gt;Injured&lt;/em&gt; or &lt;em&gt;dead&lt;/em&gt;.&lt;br /&gt;&lt;small&gt;Term origin: ACAPS DSS, Humanitarian Profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Casualties</skos:prefLabel>
+        <label:plural xml:lang="en">Casualties</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Country -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Country">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnit"/>
+        <rdfs:comment xml:lang="en">Highest-level administrative unit (level 0). This includes but is not limited to the three-letter country codes defined by ISO 3166-1, which may represent nations, dependent territories, and special areas of geographical interest. Instantiation of a hxl:Country object is for the administrative purposes of the Humanitarian Exchange Language and does not imply endoresement or recognition of any type by anybody.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Country</skos:prefLabel>
+        <label:plural xml:lang="en">Countries</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#DataContainer -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#DataContainer">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment>This is the &lt;em&gt;container&lt;/em&gt; element to attach any metadata to. Any HXL file has to include exactly one data container element and make all metadata statements about this container. When loading the file into the triple store, a new named graph will be created that inherits the metadata from this container.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">Data Container</skos:prefLabel>
+        <label:plural xml:lang="en">Data Containers</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Dead -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Dead">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Casualty"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#Injured"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#Missing"/>
+        <rdfs:comment>A (reported) death.&lt;br /&gt;&lt;small&gt;Term origin: ACAPS DSS, HPM Ethiopia, Shelter Cluster, Humanitarian Profile (&lt;em&gt;Dead&lt;/em&gt;).&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:altLabel xml:lang="en">Dead</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Deaths</skos:prefLabel>
+        <label:plural xml:lang="en">Deaths</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Displaced -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Displaced">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#AffectedPopulation"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#NonDisplaced"/>
+        <rdfs:comment>Refers to internally displaced persons, refugees, and others of concern.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile, ACAPS DSS (&lt;em&gt;Displacement&lt;/em&gt;)&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Displaced Population</skos:prefLabel>
+        <label:plural xml:lang="en">Displaced Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#DisplacedLocationType -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#DisplacedLocationType">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment xml:lang="en">Generic class for types of displaced locations; instances should be created for actual displaced location types and must have identifiers that do not start with a number. Examples: &lt;em&gt;self-settled camp&lt;/em&gt; or &lt;em&gt;collective centre&lt;/em&gt;. Each DisplacedLocationType should be added to at least one &lt;a href=&apos;#DisplacedLocationTypeSet&apos;&gt;DisplacedLocationTypeSet&lt;/a&gt; following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Displaced Location Type</skos:prefLabel>
+        <label:plural xml:lang="en">Displaced Location Types</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#DisplacedLocationTypeSet -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#DisplacedLocationTypeSet">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+        <rdfs:comment xml:lang="en">Generic class for classes describing the housing situation in which a displaced population is living. Subclasses of this class represent a coherent set of these location types which may vary from emergency to emergency.  The individual types are instances of the subclass. &lt;a href=&apos;#DisplacedLocationType&apos;&gt;DisplacedLocationTypes&lt;/a&gt; should be added to a DisplacedLocationTypeSet following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Displaced Persons Location Type Set</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Distribution -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Distribution">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Response"/>
+        <hxl:topLevelConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hxl:topLevelConcept>
+        <rdfs:comment xml:lang="en">A distribution as part of response activities, e.g., a distribution of food or shelter/household kits.&lt;br /&gt;&lt;small&gt;This class has been added for demo purposes only, a proper definition will be provided in subsequent versions of the vocabulary.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#ResponseSection"/>
+        <skos:prefLabel xml:lang="en">Distribution</skos:prefLabel>
+        <label:plural xml:lang="en">Distributions</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Emergency -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Emergency">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Situation"/>
+        <rdfs:comment>&lt;p&gt;Any situation in which life or well-being will be threatened  unless immediate  and  appropriate   action  is  taken,  and  which demands   an   extraordinary   response   and   exceptional measures (from UNHCR Handbook for Emergencies).&lt;/p&gt;&lt;!-- &lt;p&gt;A sudden crisis situation or event requiring immediate action (WART) &lt;/p&gt;&lt;p&gt;Any situation in which there is an exceptional and widespread threat to life, health or basic  subsistence,  that  is  beyond  the  coping  capacity  of individuals and the community  (Oxfam GB Emergency Response Manual). &lt;/p&gt;&lt;p&gt;Where and when a disaster provokes an immediate, exceptional and widespread threat to life, health or basic subsistence, which overwhelms the coping capacity of individual and community, implying need of external assistance” (source: ACFIN Emergency module)&lt;/p&gt; --&gt;&lt;small&gt;Term origin: CAP OPS, Pakistan SRF, ACAPS DSS, CERF, MIRA.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel xml:lang="en">Emergency</skos:prefLabel>
+        <label:plural xml:lang="en">Emergencies</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#HXLer -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#HXLer">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Source"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Superclass for any individuals or organizations interacting with HXL.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">HXLer</skos:prefLabel>
+        <label:plural xml:lang="en">HXLers</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#HostPopulation -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#HostPopulation">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#NonDisplaced"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#NonHostPopulation"/>
+        <rdfs:comment>Persons who are part of a host community or family receiving affected people. Due to the stress placed on the host families and communities, they are considered part of the humanitarian caseload.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Host Population</skos:prefLabel>
+        <label:plural xml:lang="en">Host Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#IDP -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#IDP">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Displaced"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#Others"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#RefugeesAsylumSeekers"/>
+        <rdfs:comment>A group of internally displaced persons (IDPs).&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile, CERF, HPM Ethiopia&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:altLabel xml:lang="en">IDP</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Internally Displaced Population</skos:prefLabel>
+        <label:plural xml:lang="en">Internally Displaced Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Incident -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Incident">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <hxl:topLevelConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hxl:topLevelConcept>
+        <rdfs:comment xml:lang="en">Generic class to cover all types of incidents that lead to a situation where parts of the local population are affected in a way that requires intervention. Examples include natural disaster, outbreak of an armed conflict, outbreak of a disease in an APL, etc.&lt;br /&gt;&lt;small&gt;This class has been added for demo purposes only, a proper definition will be provided in subsequent versions of the vocabulary.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel xml:lang="en">Incident</skos:prefLabel>
+        <label:plural xml:lang="en">Incidents</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Injured -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Injured">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Casualty"/>
+        <rdfs:comment>Indicates the Injured population.&lt;br /&gt;&lt;small&gt;Term origin: ACAPS DSS, Humanitarian Profile, Shelter Cluster, HERAMS Checklist (&lt;em&gt;Injury&lt;/em&gt;)&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Injured</skos:prefLabel>
+        <label:plural xml:lang="en">Injured</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment xml:lang="en">Abstract base class for things that have a location. Any class in HXL that represents located things is a subclass of hxl:BaseClass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Missing -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Missing">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Casualty"/>
+        <rdfs:comment>Associated with &lt;i&gt;Missing Persons&lt;/i&gt; as a major humanitarian concern in complex emergencies where many people go missing, causing anguish and uncertainty for their families and friends. See &lt;em&gt; ICRC &lt;/em&gt;. &lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Missing</skos:prefLabel>
+        <label:plural xml:lang="en">Missing</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Need -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Need">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <hxl:topLevelConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hxl:topLevelConcept>
+        <rdfs:comment xml:lang="en">Needs of an affected population, such as water, shelter, and sanitation.&lt;br /&gt;&lt;small&gt;This class has been added for demo purposes only, a proper definition will be provided in subsequent versions of the vocabulary.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel xml:lang="en">Need</skos:prefLabel>
+        <label:plural xml:lang="en">Needs</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#NonDisplaced -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#NonDisplaced">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#AffectedPopulation"/>
+        <rdfs:comment>Refers to the part of the affected population that is not displaced (i.e., host or non-host);.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Non-Displaced Population</skos:prefLabel>
+        <label:plural xml:lang="en">Non-Displaced Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#NonHostPopulation -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#NonHostPopulation">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#NonDisplaced"/>
+        <rdfs:comment>People requiring immediate assistance during a period of emergency who have not moved from their homes or places of habitual residence.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Non-host Population</skos:prefLabel>
+        <label:plural xml:lang="en">Non-host Populations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Organisation -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Organisation">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Source"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organisation"/>
+        <rdfs:comment>A humanitarian organisation.&lt;br /&gt;&lt;small&gt;Term origin: IATI, CAP OPS, Pakistan SRF, EIMS Report, Shelter Cluster, Sigmah DB.&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <skos:prefLabel xml:lang="en">Organisation</skos:prefLabel>
+        <label:plural xml:lang="en">Organisations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Others -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Others">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Displaced"/>
+        <owl:disjointWith rdf:resource="http://hxl.humanitarianresponse.info/ns/#RefugeesAsylumSeekers"/>
+        <rdfs:comment>Persons who have been displaced by the emergency and form part of the humanitarian caseload, but do not fall into the IDP or refugees/asylum seekers categories.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Others of Concern</skos:prefLabel>
+        <label:plural xml:lang="en">Others of Concern</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#PopPlaceClass -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#PopPlaceClass">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment xml:lang="en">The classes of populated places can very country to country. This class refers to a specific instance of a single class used in a single country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Populated Place Class</skos:prefLabel>
+        <label:plural xml:lang="en">Populated Place Classes</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#PopulatedPlace -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#PopulatedPlace">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#AdminUnit"/>
+        <rdfs:comment xml:lang="en">Lowest-level administrative unit, such as a town or settlement. These are usually represented by point locations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">Populated Place</skos:prefLabel>
+        <label:plural xml:lang="en">Populated Places</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Population -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Population">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <hxl:topLevelConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hxl:topLevelConcept>
+        <rdfs:comment xml:lang="en">Generic class for any kind of population. Use the subclasses for the data annotation whenever possible.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Population Group</skos:prefLabel>
+        <label:plural xml:lang="en">Population Groups</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#RefugeesAsylumSeekers -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#RefugeesAsylumSeekers">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Displaced"/>
+        <rdfs:comment>A group of refugees and asylum seekers.&lt;br /&gt;&lt;small&gt;Term origin: Humanitarian Profile&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Refugees and Asylum Seekers</skos:prefLabel>
+        <label:plural xml:lang="en">Refugees and Asylum Seekers</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ReportCategory -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#ReportCategory">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment xml:lang="en">Instances of this class are specific report categories such as &lt;em&gt;humanitrian profile&lt;/em&gt;, &lt;em&gt;shelter&lt;/em&gt; or &lt;em&gt;security&lt;/em&gt;. Each ReportCategory should be added to at least one &lt;a href=&apos;#ReportCategorySet&apos;&gt;ReportCategorySet&lt;/a&gt; following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">Report Category</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ReportCategorySet -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#ReportCategorySet">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+        <rdfs:comment xml:lang="en">A set of report categories that may be specific to an emergency. &lt;a href=&apos;#ReportCategory&apos;&gt;ReportCategories&lt;/a&gt; should be added to a ReportCategorySet following the conventions of &lt;a href=&apos;http://www.w3.org/TR/rdf-schema/#ch_member&apos;&gt;rdfs:member&lt;/a&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">Report Category Set</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Response -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Response">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:comment>Generic term for the collection of all activities that address the needs arising from an emergency.&lt;br /&gt;&lt;small&gt;Term origin: ACAPS DSS, ACAPS DSS, MIRA, EDXL, CCDI (&lt;em&gt;Humanitarian Response&lt;/em&gt;), CERF (&lt;em&gt;Humanitarian Response&lt;/em&gt;)&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <skos:prefLabel xml:lang="en">Response</skos:prefLabel>
+        <label:plural xml:lang="en">Responses</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#SexCategory -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#SexCategory">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:comment>Class to describe sex-specific issues, either at individual or group level.&lt;br /&gt;&lt;small&gt;Term origin: MIRA, CCDI&lt;/small&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">Sex Category</skos:prefLabel>
+        <label:plural xml:lang="en">Sex Categories</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Situation -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Situation">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#LocatedBaseClass"/>
+        <rdfs:comment xml:lang="en">Generic situation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel xml:lang="en">Situation</skos:prefLabel>
+        <label:plural xml:lang="en">Situations</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#Source -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#Source">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#BaseClass"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Superclass for any source of information (HXLer, Organisation, etc.) provided by an HXL datacontainer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">Source</skos:prefLabel>
+        <label:plural xml:lang="en">Sources</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#System -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#System">
+        <rdfs:subClassOf rdf:resource="http://hxl.humanitarianresponse.info/ns/#Source"/>
+        <rdfs:comment xml:lang="en">A system (e.g. information system, database) providing HXL data.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">System</skos:prefLabel>
+        <label:plural xml:lang="en">Systems</label:plural>
+    </owl:Class>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#vocabularySection -->
+
+    <owl:Class rdf:about="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel>dc:PeriodOfTime</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel>foaf:Agent</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel>foaf:Group</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organisation -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organisation">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <skos:prefLabel>foaf:Organisation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://carsten.io -->
+
+    <owl:NamedIndividual rdf:about="http://carsten.io"/>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/data/persons/unocha/carsten_kessler -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/data/persons/unocha/carsten_kessler">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:homepage rdf:resource="http://carsten.io"/>
+        <foaf:mbox>me@carsten.io</foaf:mbox>
+        <foaf:name>Carsten Keßler</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/data/persons/unocha/cj_hendrix -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/data/persons/unocha/cj_hendrix">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox>hendrix.cj@gmail.com</foaf:mbox>
+        <foaf:name>CJ Hendrix</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/data/persons/unocha/minu_limbu -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/data/persons/unocha/minu_limbu">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox>minulimbu@gmail.com</foaf:mbox>
+        <foaf:name>Minu Limbu</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#abbreviation -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#abbreviation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelNumber -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#adminUnitLevelTitle -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#comment -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#comment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#commonTitle -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#commonTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#count -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#count">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#date -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#description -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureAltName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#featureAltName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#featureName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#featureRefName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#featureRefName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#fromAge -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#fromAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#ftsId -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#ftsId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#geolocationSection -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#geolocationSection">
+        <rdf:type rdf:resource="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+        <dc:title>Geolocation Section</dc:title>
+        <rdfs:comment xml:lang="en">This section of the vocabulary defines the geolocation standard. The &lt;a href=&apos;hxl-geolocation-standard-draft.pdf&apos;&gt;draft HXL geolocation standard&lt;/a&gt; contains a detailed description of how to use the classes and properties.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#householdCount -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#householdCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection">
+        <rdf:type rdf:resource="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+        <dc:title xml:lang="en">Humanitarian Profile Section</dc:title>
+        <rdfs:comment xml:lang="en">This section of the vocabulary defines the humanitarian profile standard which includes classes for describing populations affected by an emergency.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#metadataSection -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#metadataSection">
+        <rdf:type rdf:resource="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+        <dc:title>Metadata Section</dc:title>
+        <rdfs:comment xml:lang="en">This section of the vocabulary defines the standards for metadata about a set of HXL data that is being exchanged. The &lt;a href=&apos;hxl-datetime-standard-draft.pdf&apos;&gt;draft HXL date/time standard&lt;/a&gt; contains a detailed description of how to use the classes and properties related to dates and timestamps.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#method -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#method">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#operatedBy -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#operatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgDisplayName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#orgDisplayName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#orgName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#orgNativeName -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#orgNativeName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#pcode -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#pcode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#personCount -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#personCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#popPlaceClassNumber -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#popPlaceClassTitle -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#responseSection -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#responseSection">
+        <rdf:type rdf:resource="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+        <dc:title>Response Section</dc:title>
+        <rdfs:comment xml:lang="en">This section of the vocabulary defines the standards for response activities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#situationSection -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#situationSection">
+        <rdf:type rdf:resource="http://hxl.humanitarianresponse.info/ns/#vocabularySection"/>
+        <dc:title>Situation Section</dc:title>
+        <rdfs:comment xml:lang="en">This section of the vocabulary defines the standards for situations and emergencies.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#title -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#toAge -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#toAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hxl.humanitarianresponse.info/ns/#validOn -->
+
+    <owl:NamedIndividual rdf:about="http://hxl.humanitarianresponse.info/ns/#validOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#abbreviation">
+        <skos:prefLabel>organisation abbreviation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <rdfs:comment>Indicates the abbreviation of the Organisation. &lt;small&gt;Term origin: FTS.&lt;/small&gt;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelCountry">
+        <rdfs:comment xml:lang="en">Relates an administrative unit level to the country (or countries) that it can be used in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">administrative unit level country</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelNumber">
+        <rdfs:comment xml:lang="en">The number for this administrative unit level; e.g. 0 for country, 1 for state, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">administrative unit level number</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#adminUnitLevelTitle">
+        <rdfs:comment xml:lang="en">The title for this administrative unit level; e.g. &lt;em&gt;state&lt;/em&gt; or &lt;em&gt;city district&lt;/em&gt;.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">administrative unit level title</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#comment">
+        <rdfs:comment xml:lang="en">Generic property for comments.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">comment</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#commonTitle">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <skos:prefLabel xml:lang="en">common title</skos:prefLabel>
+        <rdfs:comment xml:lang="en">A commonly use title/name for an emergency.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#count">
+        <skos:prefLabel xml:lang="en">count</skos:prefLabel>
+        <rdfs:comment xml:lang="en">Property to count people, things, etc. Subproperties should be used if possible to clarify what has been counted.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#date">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <rdfs:comment>Generic property for date/time stamps (e.g., reporting time stamps for data containers) at arbitrary granularity.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">date</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#description">
+        <skos:prefLabel>description</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <rdfs:comment>Generic property for descriptions.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#featureAltName">
+        <skos:prefLabel xml:lang="en">feature alternate name</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <rdfs:comment xml:lang="en">An alternative spelling of the feature.  This is not the accepted spelling of the name for the humanitarian community and should be avoided.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#featureName">
+        <skos:prefLabel xml:lang="en">feature name</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <rdfs:comment xml:lang="en">The common name of the feature.  This is the accepted spelling of the name for the humanitarian community at the time of this version of the dataset.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#featureRefName">
+        <skos:prefLabel xml:lang="en">feature reference name</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <rdfs:comment xml:lang="en">A version of the feature name in proper case without accented characters or apostrophes.  Spaces and hyphens are allowed.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#fromAge">
+        <rdfs:comment>Specifies the bottom of an age range for an AgeGroup (in years).</rdfs:comment>
+        <skos:prefLabel xml:lang="en">from age</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#ftsId">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <rdfs:comment>States the ID of the organisation in OCHA&apos;s Financial Tracking Service (FTS).</rdfs:comment>
+        <skos:prefLabel>FTS ID</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#hasGLIDEnumber">
+        <skos:prefLabel xml:lang="en">has GLIDE number</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#situationSection"/>
+        <rdfs:comment xml:lang="en">Assigns the GLIDE number to an Emergency, i.e. a common unique ID code for disasters. See &lt;a href=&apos;http://glidenumber.net/glide/public/about.jsp&apos;&gt;about GLIDE&lt;/a&gt;.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#householdCount">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <rdfs:comment xml:lang="en">An estimate or count of the number of households in a population. The method by which the number was determined or estimated should also be reported using the hxl:method property.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">household count</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#method">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <skos:prefLabel xml:lang="en">method</skos:prefLabel>
+        <rdfs:comment xml:lang="en">The method by which the person count or household count was derived.&lt;br /&gt;&lt;small&gt;Source: Humanitarian profile.&lt;/small&gt;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#operatedBy">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <skos:prefLabel xml:lang="en">operated by</skos:prefLabel>
+        <rdfs:comment xml:lang="en">States that a system producing HXL is operated by a HXLer (usually an organisation or person).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#orgDisplayName">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <skos:prefLabel>organisation name for display</skos:prefLabel>
+        <rdfs:comment>Indicates the organisation name that is most commonly used and displayed.  &lt;small&gt;Term origin: FTS.&lt;/small&gt;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#orgName">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <rdfs:comment>States the name of the organisation. &lt;small&gt;Term origin: FTS.&lt;/small&gt;</rdfs:comment>
+        <skos:prefLabel>organisation name</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#orgNativeName">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#responseSection"/>
+        <rdfs:comment>Specifies the native name of the organisation. &lt;small&gt;Term origin: FTS.&lt;/small&gt;</rdfs:comment>
+        <skos:prefLabel>native organisation name</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#pcode">
+        <skos:prefLabel xml:lang="en">p-code</skos:prefLabel>
+        <rdfs:comment xml:lang="en">Specifies the unique identifier for an administrative unit or populated place. This is the preferred way of referencing these geographic features. If the referred administrative unit is a country, this property should be used for the country code used locally in this country. Note that this code may differ from the country&apos;s &lt;a href=&apos;http://en.wikipedia.org/wiki/ISO_3166-1&apos;&gt;ISO country code&lt;/a&gt;. To provide the ISO country codes, please use the corresponding DBpedia properties for &lt;a href=&apos;http://dbpedia.org/property/iso31661Alpha&apos;&gt;two/three letter alphanumeric codes&lt;/a&gt; and &lt;a href=&apos;http://dbpedia.org/property/iso31661Numeric&apos;&gt;numeric codes&lt;/a&gt;, respectively.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#personCount">
+        <skos:prefLabel xml:lang="en">person count</skos:prefLabel>
+        <owl:minCardinality>1</owl:minCardinality>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <rdfs:comment xml:lang="en">An estimate or count of the number of persons in a population. The range is intentionally not restricted to numeric values, so that rough numbers or estimates are supported. Note that totals should not be reported; only report at the most detailed level of demographic breakdown available. Totals can then be calculated from the detailed numbers.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassNumber">
+        <skos:prefLabel xml:lang="en">populated place class number</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <rdfs:comment xml:lang="en">A number used to indicate the classes place in the populated place class hierarchy.  1 should be used to represent larger or more important classes in the hierarchy, with higher numbers representing progressively smaller or less important classes in the hierarchy.  The classification systesm vary by country.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#popPlaceClassTitle">
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#geolocationSection"/>
+        <skos:prefLabel xml:lang="en">populated place class title</skos:prefLabel>
+        <rdfs:comment xml:lang="en">The locally used title for a class of populated place; e.g. &lt;em&gt;provincial capital&lt;/em&gt;, &lt;em&gt;village&lt;/em&gt;, &lt;em&gt;population 10,000 to 50,000&lt;/em&gt;.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#title">
+        <rdfs:comment>Generic property for titles.</rdfs:comment>
+        <skos:prefLabel>title</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#toAge">
+        <skos:prefLabel xml:lang="en">to age</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#humanitarianProfileSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+        <rdfs:comment>Specifies the top of an age range for an AgeGroup (in years).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://hxl.humanitarianresponse.info/ns/#validOn">
+        <skos:prefLabel xml:lang="en">valid on</skos:prefLabel>
+        <rdfs:comment>Property to express when a certain piece of data, such as a person count, was valid. Note that this may differ from the time when the data was &lt;em&gt;reported&lt;/em&gt;; use &lt;a href=&apos;#date&apos;&gt;hxl:date&lt;/a&gt; for these.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://hxl.humanitarianresponse.info/ns/#metadataSection"/>
+        <owl:minCardinality>1</owl:minCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

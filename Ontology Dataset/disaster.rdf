@@ -1,0 +1,3239 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Food="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Schools="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Schools&amp;"
+     xmlns:Shelter="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter&amp;"
+     xmlns:occuredB="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredB/"
+     xmlns:HeavySnow="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow&amp;"
+     xmlns:Hurricane="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Hurricane&amp;"
+     xmlns:Ontology1226057991156="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#"
+     xmlns:Ontology12260579911562="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl">
+        <dc:relation></dc:relation>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#maxInclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#maxInclusive"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#minExclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#minExclusive"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error3 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#affects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#causes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBaseLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBaseLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndPoint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEpiCentre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEpiCentre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPriority -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPriority"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasServices -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasServices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartingPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartingPoint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#servicesProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#servicesProvidedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DiedPassengers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DiedPassengers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#InjuredPassengers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#InjuredPassengers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NonDrinkingWater_Lt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NonDrinkingWater_Lt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PercentageOfDestroyedCorps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PercentageOfDestroyedCorps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#altitudeOfAshPlumes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#altitudeOfAshPlumes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#burstingOfDams -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#burstingOfDams"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#collisionBetweenvehicles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#collisionBetweenvehicles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#cookingFuel_Lt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#cookingFuel_Lt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsInjured -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsInjured"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#drinkingWater_Lt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#drinkingWater_Lt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#electricPolesDestroyed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#electricPolesDestroyed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAffectedArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAffectedArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAmountOfExplosive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAmountOfExplosive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAreaTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAreaTemperature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBaroMeterReading -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBaroMeterReading"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBlanket_Pieces -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBlanket_Pieces"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBooks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBooks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeHeight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeLength"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeWidth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCapacity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCapital"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCatogry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCatogry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCenterPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCenterPressure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCityCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCityCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasClothes_Pieces -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasClothes_Pieces"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCountryCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCountryCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCrashedplane -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCrashedplane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDepth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDiameter_Mile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDiameter_Mile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDoctors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDoctors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricCables -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricCables"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricPoles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricPoles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEmail"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFaultName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFaultName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFax"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFinancialLoss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFinancialLoss">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFlour_Kg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFlour_Kg"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasForestAffectedArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasForestAffectedArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasGenerators -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasGenerators"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasGroundMovement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasGroundMovement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasHygienePromotion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasHygienePromotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasJackets_Pieces -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasJackets_Pieces"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLatitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLifeSavingDrugs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLifeSavingDrugs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLongitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLowTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLowTemperature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMagnitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMagnitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMedicalEquipment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMedicalEquipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilitants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilitants"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilkPowder_Lt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilkPowder_Lt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasNo-ofDamagedVehicles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasNo-ofDamagedVehicles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOceanWaveCause -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOceanWaveCause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOpponents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOpponents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPhoneNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPhoneNo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPopulation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasProtestors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasProtestors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPyroclasticFlow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPyroclasticFlow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRainfallShortage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRainfallShortage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRegistrationNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRegistrationNo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRice_Kg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRice_Kg"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRiversNames -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRiversNames"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadLength"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadWidth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSchools -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSchools"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasShelterSheets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasShelterSheets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSliding -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSliding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowDepth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowHeight_ft -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowHeight_ft"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSoundRange_KM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSoundRange_KM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Normal_Bombing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSpeed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStormSurge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStormSurge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStrikeCause -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStrikeCause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStudents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStudents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSugar_Kg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSugar_Kg"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSuicidal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSuicidal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSurroundingPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSurroundingPressure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTeachers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTeachers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTemporaryLavatory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTemporaryLavatory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTools -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTools"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWaterHeight_Ft -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWaterHeight_Ft"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWebSite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWebSite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWindSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWindSpeed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasYear"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#injuredStudents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#injuredStudents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#killedStudents -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#killedStudents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#meltingOfSnow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#meltingOfSnow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_Ambulance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_Ambulance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_CiviliansKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_CiviliansKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_FireBrigadeVehicles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_FireBrigadeVehicles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersInjured -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersInjured"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_MillitantsKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_MillitantsKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AffectedPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AffectedPeople"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AfterShocks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AfterShocks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_ChildrenKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_ChildrenKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedBogies -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedBogies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedEngines -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedEngines"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedPeople"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DeadPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DeadPeople"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedBoats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedBoats"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedHouses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedHouses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_InjuredPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_InjuredPeople"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OldPeoplekilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OldPeoplekilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OriginatingStorms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OriginatingStorms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Participants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Participants"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_UpRootedTrees -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_UpRootedTrees"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Vehicles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Vehicles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_WomensKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_WomensKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnLand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnLand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnOcean -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnOcean"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsInjured -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsInjured"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsKilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsKilled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#peopleInCriticalCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#peopleInCriticalCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#reportingResource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#reportingResource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#responsibility-Claimer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#responsibility-Claimer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#situatedInContinent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#situatedInContinent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#soldiersDeployed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#soldiersDeployed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transformersDestroyed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transformersDestroyed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transportationFuel_Lt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transportationFuel_Lt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#volcanoStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#volcanoStatus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredB/wBeaches -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredB/wBeaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Aviation_Hazard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Aviation_Hazard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCrashedplane"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Train_Collision"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicular_Collission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Blizzard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Blizzard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowDepth"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLowTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Hurricane_And_Cyclones"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tornado"/>
+        <rdfs:comment>A blizzard is a severe winter storm condition characterized by low temperatures, strong winds, and heavy blowing snow. Blizzards are formed when a high pressure system, also known as a ridge, interacts with a low pressure system; this results in the advection of air from the high pressure zone into the low pressure area.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#BridgeLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#BridgeLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationLoss"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeHeight"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeLength"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBridgeWidth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RailwayLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RoadsDamaged"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCityCode"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Clothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBlanket_Pieces"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasClothes_Pieces"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasJackets_Pieces"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DryFood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Housing_Equipment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEmail"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFax"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#EducationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FuelFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Educational_Institute"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricityLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FarmLandLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCountryCode"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCapital"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#situatedInContinent"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Friday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Monday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Saturday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sunday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Thursday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tuesday"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Wednesday"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#causes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasServices"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAffectedArea"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFinancialLoss"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AffectedPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_ChildrenKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DeadPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_InjuredPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_WomensKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#reportingResource"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:comment>A Disaster can be of two types, Natural Disaster as well as HumanMade Disaster.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Drought -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Drought">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRainfallShortage"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Earthquake"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Flood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ForestFire"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>A long period of abnormally low rainfall, especially one that adversely affects growing or living conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DryFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DryFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFlour_Kg"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilkPowder_Lt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRice_Kg"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSugar_Kg"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Housing_Equipment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Earthquake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Earthquake">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEpiCentre"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#causes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDepth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFaultName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMagnitude"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_AfterShocks"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedHouses"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Flood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ForestFire"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>An earthquake is the sudden, sometimes violent movement of the earth&apos;s surface from the release of energy in the earth&apos;s crust.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#EducationFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#EducationFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBooks"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSchools"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStudents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTeachers"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FuelFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Educational_Institute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Educational_Institute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#injuredStudents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#killedStudents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricityLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FarmLandLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricCables"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasElectricPoles"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasGenerators"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FuelFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricityLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ElectricityLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#electricPolesDestroyed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transformersDestroyed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FarmLandLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FarmLandLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FarmLandLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PercentageOfDestroyedCorps"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Flood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Flood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMagnitude"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRiversNames"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#burstingOfDams"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSpeed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWaterHeight_Ft"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#meltingOfSnow"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ForestFire"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>A flood is an overflow of water. A flood is caused by too much rain or water in a location, and could be caused by many different sets of conditions. Floods can be caused by prolonged rainfall from a storm, including thunderstorms, rapid melting of large amounts of snow, or rivers which swell from excess precipitation upstream and cause widespread damage to areas downstream, or less frequently the bursting of man-made dams.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ForestFire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#ForestFire">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasForestAffectedArea"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAreaTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>A fire, often large, that consumes a forest or woodland.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FuelFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#FuelFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#cookingFuel_Lt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#transportationFuel_Lt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#GoodsSupplyFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Clothing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HeavySnow">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSnowHeight_ft"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#HospitalLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsInjured"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#doctorsKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsInjured"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#patientsKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Housing_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Housing_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasShelterSheets"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Hurricane_And_Cyclones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Hurricane_And_Cyclones">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnOcean"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCatogry"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStormSurge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedBoats"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OriginatingStorms"/>
+                <owl:someValuesFrom rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredB/wBeaches"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tornado"/>
+        <rdfs:comment>A tropical cyclone is a storm system characterized by a low pressure center and numerous thunderstorms that produce strong winds and flooding rain. A tropical cyclone feeds on heat released when moist air rises, resulting in condensation of water vapour contained in the moist air. They are fueled by a different heat mechanism than other cyclonic windstorms such as nor’easters, European windstorms, and polar lows, leading to their classification as “warm core” storm systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#INGO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#INGO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NGO"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PrivateOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PublicOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LandSlide">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSliding"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>Landslides are rock, earth, or debris flows on slopes due to gravity. They can occur on any terrain given the right conditions of soil, moisture, and the angle of slope</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLatitude"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLongitude"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+        <rdfs:comment>A man-made hazard is a threat having an element of human intent, negligence, or error, or involving a failure of a man-made system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#MedicalFacilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDoctors"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasLifeSavingDrugs"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMedicalEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#April"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#August"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#December"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#February"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#January"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#July"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#June"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#March"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#May"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#November"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#October"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#September"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDay"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDay"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">31</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NGO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NGO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PrivateOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PublicOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Disaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#soldiersDeployed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A natural disaster is the consequence of a natural hazard (e.g. volcanic eruption, earthquake, or landslide) which affects human activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Normal_Bombing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Normal_Bombing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Terrorist_Attacks"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSoundRange_KM"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasAmountOfExplosive"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Terrorist_Attacks"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedHouses"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Strikes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Warfares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PrivateOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PrivateOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PublicOrganization"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PropertyLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Losses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PublicOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#PublicOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RailwayLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RailwayLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationLoss"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DiedPassengers"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#InjuredPassengers"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedBogies"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DamagedEngines"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RoadsDamaged"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTools"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RoadsDamaged -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RoadsDamaged">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#CommunicationLoss"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndPoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartingPoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DiedPassengers"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#InjuredPassengers"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadLength"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRoadWidth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasHygienePromotion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasTemporaryLavatory"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasBaseLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasServices"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEmail"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasFax"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPhoneNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRegistrationNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWebSite"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPriority"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Immediate"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LowPriority"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Moderate"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#servicesProvidedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Shelter_And_HousingFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Housing_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sanitary_Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPopulation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasCenterPressure"/>
+                <owl:someValuesFrom rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDiameter_Mile"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSurroundingPressure"/>
+                <owl:someValuesFrom rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWindSpeed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_UpRootedTrees"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Strikes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Strikes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasProtestors"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStrikeCause"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Participants"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Warfares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Suicidal_Bombing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Suicidal_Bombing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Terrorist_Attacks"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasSuicidal"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Terrorist_Attacks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Terrorist_Attacks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersInjured"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_ForeignersKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#peopleInCriticalCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#responsibility-Claimer"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tornado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tornado">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Storm"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#occuredOnLand"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDiameter_Mile"/>
+                        <owl:someValuesFrom rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasRating"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_OriginatingStorms"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A tornado is a violent, rotating column of air which is in contact with both the surface of the earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud. Tornadoes come in many sizes but are typically in the form of a visible condensation funnel, whose narrow end touches the earth and is often encircled by a cloud of debris.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Train_Collision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Train_Collision">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#causes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RailwayLoss"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicular_Collission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#TransportationFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartingPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Warfares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tsunami">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOceanWaveCause"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasWaterHeight_Ft"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano"/>
+        <rdfs:comment>A tsunami is a natural phenomenon consisting of a series of waves generated when water in a lake or the sea is rapidly displaced on a massive scale. Earthquakes, landslides, volcanic eruptions and large meteorite impacts all have the potential to generate a tsunami. A tsunami may travel unnoticed across the ocean for thousands of miles from its point of origin and builds up to great heights over shallower water. Also known as a seismic sea wave, and incorrectly, as a tidal wave.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Relief_Items"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_Ambulance"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_FireBrigadeVehicles"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_Vehicles"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicular_Collission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Vehicular_Collission">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Transportation_Hazard"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasNo-ofDamagedVehicles"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#collisionBetweenvehicles"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volcano">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#altitudeOfAshPlumes"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasPyroclasticFlow"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NaturalDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasEndYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasStartYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#volcanoStatus"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Volunteer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Service-Provider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Warfares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Warfares">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Man-MadeDisaster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasMilitants"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasOpponents"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_CiviliansKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-Of_MillitantsKilled"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_DestroyedHouses"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#no-of_MissingPeople"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>War is conflict between relatively large groups of people, which involves physical force inflicted by the use of weapons.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WaterFaciliity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#NonDrinkingWater_Lt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#drinkingWater_Lt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Date"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Food&amp;NutritionFacility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Services"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#DryFood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#April -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#April">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#August -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#August">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Bagh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Bagh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Balakot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Balakot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Bangladesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Bangladesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Budgram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Budgram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#December -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#December">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#February -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#February">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Friday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Friday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Immediate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Immediate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Islamabad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Islamabad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#January -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#January">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#July -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#July">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#June -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#June">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Kashmir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Kashmir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LowPriority -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#LowPriority"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Mansehra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Mansehra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#March -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#March">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#May -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#May">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Moderate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Monday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Monday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#November -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#November">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#October -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#October">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Pakistan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Pakistan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Punjab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Punjab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Saturday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Saturday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#September -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#September">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Month"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sunday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sunday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Theraputty-Hand-Exerciser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Theraputty-Hand-Exerciser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Thursday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Thursday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tuesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tuesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Wednesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Wednesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Day"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WheelChairs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#WheelChairs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#RehabilitationFacility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Ziarat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Ziarat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#City"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:maxInclusive>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1010</xsd:minExclusive>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1010</xsd:maxInclusive>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minExclusive>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#April"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#August"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#December"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#February"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#January"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#July"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#June"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#March"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#May"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#November"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#October"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#September"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Friday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Monday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Saturday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Sunday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Thursday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Tuesday"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2008/10/Ontology1226057991156.owl#Wednesday"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

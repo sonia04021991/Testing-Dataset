@@ -1,0 +1,1792 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.observedchange.com/moac/ns#"
+     xml:base="http://www.observedchange.com/moac/ns"
+     xmlns:ns="http://observedchange.com/moac/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:prv="http://purl.org/net/provenance/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterm="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.observedchange.com/moac/ns#">
+        <dcterm:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-29T20:30:00Z</dcterm:created>
+        <dcterm:creator rdf:resource="http://kauppinen.net/tomi#me"/>
+        <dcterm:title xml:lang="en">Management of a Crisis Vocabulary namespace</dcterm:title>
+        <prv:createdBy>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataCreation"/>
+                <prv:performedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-29T20:30:00Z</prv:performedAt>
+                <prv:performedBy rdf:resource="http://kauppinen.net/tomi#me"/>
+            </rdf:Description>
+        </prv:createdBy>
+        <prv:createdBy>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataCreation"/>
+                <prv:performedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-29T20:30:00Z</prv:performedAt>
+                <prv:performedBy rdf:resource="http://kauppinen.net/tomi#me"/>
+            </rdf:Description>
+        </prv:createdBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#clusterActivity -->
+
+    <owl:AnnotationProperty rdf:about="http://observedchange.com/moac/ns#clusterActivity">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#IASCCluster"/>
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#NeedsResponse3W"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/net/provenance/ns#createdBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/provenance/ns#createdBy"/>
+    
+
+
+    <!-- http://purl.org/net/provenance/ns#performedAt -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/provenance/ns#performedAt"/>
+    
+
+
+    <!-- http://purl.org/net/provenance/ns#performedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/provenance/ns#performedBy"/>
+    
+
+
+    <!-- http://www.w3.org/1999/xhtml/vocab#stylesheet -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/xhtml/vocab#stylesheet"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NFINeededAt -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#NFINeededAt">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#Where3W"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#affectedby -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#affectedby">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#NaturalHazard"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#NaturalHazards"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterOffered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#belongsToCluster -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#belongsToCluster">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#IASCCluster"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#moac:Who3W"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countInPipeline -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#countInPipeline">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterNFIItems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countInStock -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#countInStock">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterNFIItems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countOfAffectedPopulation -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#countOfAffectedPopulation">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countofAffectedHH -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#countofAffectedHH">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#date -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#date">
+        <rdfs:range rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#dateOfDistbn -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#dateOfDistbn">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#When3W"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#distributingPartner -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#distributingPartner">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#has3Wcomponent -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#has3Wcomponent">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhere3W"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasNFIItems -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#hasNFIItems">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#NFIItems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasOrganisationID -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#hasOrganisationID">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#moac:Who3W"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasShelterItems -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#hasShelterItems">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterItems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#string"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#impact -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#impact">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#InfrastructureDamage"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#NaturalHazard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#involvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#involvedIn">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterActivity"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterResponse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#organizationName -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#organizationName">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#IASCCluster"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#Who3W"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#shelterNeededAt -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#shelterNeededAt">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#AffectedPopulation"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#Where3W"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#shelterOfferedAt -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#shelterOfferedAt">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#Where3W"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#supplyingAgency -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#supplyingAgency">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterAgency"/>
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#moac:Who3W"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#tentDistbn -->
+
+    <owl:ObjectProperty rdf:about="http://observedchange.com/moac/ns#tentDistbn">
+        <rdfs:range rdf:resource="http://observedchange.com/moac/ns#ShelterOffered"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#int"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#approved -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#approved">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atGeoLocationLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#atGeoLocationLatitude">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Where3W"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atGeoLocationLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#atGeoLocationLongitude">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Where3W"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#atLocation">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Who3W"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#category -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#category">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#description -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#description">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#distributingPartner -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#distributingPartner">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasOrganisationID -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#hasOrganisationID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#supplyingAgency -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#supplyingAgency">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#title -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#title">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#verified -->
+
+    <owl:DatatypeProperty rdf:about="http://observedchange.com/moac/ns#verified">
+        <rdfs:domain rdf:resource="http://observedchange.com/moac/ns#Agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://observedchange.com/moac/ns#AffectedPopulation -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#AffectedPopulation">
+        <rdfs:comment xml:lang="en">AffectedPopulation is a group of disaster affecgted people in need of humanitarian support.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">AffectedPopulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Agency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Agency">
+        <rdfs:comment xml:lang="en">Agency is an organization that aims to manage a crisis.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Agency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#AidManipulation -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#AidManipulation">
+        <rdfs:comment xml:lang="en">AidManipulation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">AidManipulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#AnimalIllnessOrDeath -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#AnimalIllnessOrDeath">
+        <rdfs:comment xml:lang="en">AnimalIllnessOrDeath refers to the illness or death of animals caused by a disaster highlighting the possibility of spread of disease because of direct or indirect contamination.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">AnimalIllnessOrDeath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#AskingToFowardAMessage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#AskingToFowardAMessage">
+        <rdfs:comment xml:lang="en">AskingToFowardAMessage is the term used to forward certain community directed messages using third party sources.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">AskingToFowardAMessage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ChronicCareNeeds -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ChronicCareNeeds">
+        <rdfs:comment xml:lang="en">ChronicCareNeeds refers to the requirement of medical care which addresses preexisting or long term illness.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">ChronicCareNeeds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Cluster1Shelter -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Cluster1Shelter">
+        <rdfs:comment xml:lang="en">Inter Agency Standing Committee Emergency Shelter related agency specific activities. The Shelter Cluster is co-chaired by IFRC and UNHCR at the global level. IFRC is convener of the Emergency Shelter Cluster in disaster situations while UNHCR leads the Emergency Shelter Cluster in the area of conflict generated IDPs (Internally Displaced Persons). In addition to IFRC and UNHCR, participants in the Global Shelter Cluster include: ACTED, Archi-Urgent, Article 25, Care UK, CHF, CRS, DFID, Habitat for Humanity, IOM, Medair, NRC, OFDA, Oxfam GB, ProAct, ProVention, RedR, Relief International, RICS, Save The Children UK, Shelter Centre, SKAT, UN Habitat, UN OCHA, UNRWA and World Vision. (source: sheltercluster.org, accessed on 12 Feb 2012)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">Cluster1Shelter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Cluster2Food -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Cluster2Food">
+        <rdfs:comment xml:lang="en">Inter Agency Standing Committee Emergency Food related agency specific activities. World Food Programme (WFP) is the global cluster lead for Food.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">Cluster2Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Cluster3WASH -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Cluster3WASH">
+        <rdfs:comment xml:lang="en">Inter Agency Standing Committee Emergency Water Sanitation and Hygine related agency specific activities. UNICEF is the global cluster lead for WASH.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">Cluster3WASH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#CollapsedStructure -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#CollapsedStructure">
+        <rdfs:comment xml:lang="en">A CollapsedStructure is a term that defines a totally damaged state of a structure resulting from human or natural phenomenon.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">CollapsedStructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#CommunicationLinesDown -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#CommunicationLinesDown">
+        <rdfs:comment xml:lang="en">CommunicationLinesDown indicates that a mobile or a landline phone in ceratain area will not work because of the problem in the communication wired poles.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">CommunicationLinesDown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#CompromisedBridge -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#CompromisedBridge">
+        <rdfs:comment xml:lang="en">CompromisedBridge is a partially or completely damaged bridge that can no longer be used for transporting people or relief materials.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">CompromisedBridge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ContaminatedWater -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ContaminatedWater">
+        <rdfs:comment xml:lang="en">Undrinkable Water is water that is regarded unfit/unhealthy to drink for both humans and animals.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">ContaminatedWater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ContaminatedWaterSupply -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ContaminatedWaterSupply">
+        <rdfs:comment xml:lang="en">The source and delivery system provides water but polluted. It could result in outbreaks of diseases and other health realted issues.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">ContaminatedWaterSupply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Deaths -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Deaths">
+        <rdfs:comment xml:lang="en">Deaths are the termination of the biological functions that sustain a living organism.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Deaths</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#EarthquakeAndAftershock -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#EarthquakeAndAftershock">
+        <rdfs:comment xml:lang="en">An earthquake is the result of a sudden release of energy in the Earth&apos;s crust that creates seismic waves, and an aftershock is an earthquake that occurs after a previous earthquake, the mainshock.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">EarthquakeAndAftershock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Emergency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Emergency">
+        <rdfs:comment xml:lang="en">Emergency is a situation that poses an immediate crisis to human, life, health, property or environment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Emergency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#FeedingCentersAvailable -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#FeedingCentersAvailable">
+        <rdfs:comment xml:lang="en">FeedingCentersAvailable is a term that defines a location of a facility which supports providing basic life saving foods to infants and lactating mothers.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">FeedingCentersAvailable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#FinancialServicesAvailable -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#FinancialServicesAvailable">
+        <rdfs:comment xml:lang="en">FinancialServicesAvailabe refers to services provided by the certain Non Government Organizations or finance industry as a part of recovery packages to the disaster affected communities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">FinancialServicesAvailable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Fire -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Fire">
+        <rdfs:comment xml:lang="en">Fire is an uncontrolled burning that has the potential to cause physical damage on human life, health, property or ecology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Floods -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Floods">
+        <rdfs:comment xml:lang="en">A flood is an overflow of an expanse of water that submerges land.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Floods</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#FoodDistributionPoint -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#FoodDistributionPoint">
+        <rdfs:comment xml:lang="en">FoodDistributionPoint is a pre-identified location for distributing or transporting food or drink to the affected communities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">FoodDistributionPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#FoodShortage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#FoodShortage">
+        <rdfs:comment xml:lang="en">FoodShortage is a widespread scarcity of food that may apply to any faunal species.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">FoodShortage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#FuelShortage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#FuelShortage">
+        <rdfs:comment xml:lang="en">FuelShortage is a lack of minimal cooking or other fuel that a person need on a daily basis.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">FuelShortage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#GroupViolence -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#GroupViolence">
+        <rdfs:comment xml:lang="en">GroupViolence is a term used to describe more than one individual engaging in some form of criminal activities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">GroupViolence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#HealthOfWomen -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#HealthOfWomen">
+        <rdfs:comment xml:lang="en">HealthOfWomen is a term used to include all the health issues related to female gender.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">HealthOfWomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#HighlyVulnerable -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#HighlyVulnerable">
+        <rdfs:comment xml:lang="en">High possibility of loss resulting from the occurrence of the phenomenon.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">MedicalEmergency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#HospitalOperating -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#HospitalOperating">
+        <rdfs:comment xml:lang="en">HospitalOperating describes still functioning hospital after a disaster.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">HospitalOperating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#HumanRemainsManagement -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#HumanRemainsManagement">
+        <rdfs:comment xml:lang="en">HumanRemainsManagement is an abstract term used to define morgues or other locations where dead bodies can be properlay managed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">HumanRemainsManagement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#IASCCluster -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#IASCCluster">
+        <rdfs:comment xml:lang="en">Humanitarian sectors and categories of population for achieving more strategic responses and better prioritization of available resources by clarifying the division of labour among organizations, better defining the roles and responsibilities of humanitarian organizations within the sectors, and providing the Humanitarian Coordinator with both a first point of call and a provider of last resort in all the key sectors or areas of activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">IASCCluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#IDPConcentration -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#IDPConcentration">
+        <rdfs:comment xml:lang="en">IDPConcentration refers to the act of internally displaced people gathering in a certain location, which could eventually turn into an IDP camp.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">IDPConcentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Incident -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Incident">
+        <rdfs:comment xml:lang="en">Incident is a distinct or definite event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#InfectiousHumanDisease -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#InfectiousHumanDisease">
+        <rdfs:comment xml:lang="en">InfectiousHumanDisease comprise of clinically evident illness resulting from the infection, presence and growth of pathogenic biological agents in an individual host organism that could also infect others.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">InfectiousHumanDisease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#InfrastructureDamage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#InfrastructureDamage">
+        <rdfs:comment xml:lang="en">InfrastureDamage is about the damage of physically existing basic facilities, services, and installations needed for the functioning of a community or society.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">InfrastructureDamage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#InternetAccess -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#InternetAccess">
+        <rdfs:comment xml:lang="en">InternetAccess refers to certain place that can provide internet services.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">InternetAccess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Landslides -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Landslides">
+        <rdfs:comment xml:lang="en">A landslide is a geological phenomenon which includes a wide range of ground movement.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Landslides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Looting -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Looting">
+        <rdfs:comment xml:lang="en">Looting is term that indicate a form of criminal activity when disaster affected people forcefully take away the relief distribution materials.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Looting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#MedicalEmergency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#MedicalEmergency">
+        <rdfs:comment xml:lang="en">A medical emergency is an injury that is acute and poses an immediate risk to a person&apos;s life or long term health.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">MedicalEmergency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#MedicalEquipmentAndSupplyNeeds -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#MedicalEquipmentAndSupplyNeeds">
+        <rdfs:comment xml:lang="en">MedicalEquipmentAndSupplyNeeds is a term describe the demand for Medical Equipment and Supplies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">MedicalEquipmentAndSupplyNeeds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Menaces -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Menaces">
+        <rdfs:comment xml:lang="en">A Menace is a threat or danger that causes intimidation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Menaces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#MissingPersons -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#MissingPersons">
+        <rdfs:comment xml:lang="en">MissingPersons are persons whose whereabouts are unknown after sudden onset of disaster.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">MissingPersons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NFIItems -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#NFIItems">
+        <rdfs:comment xml:lang="en">NFIItems also known as Non Food Items include, but are not limited to, jerry cans, kots, mats distributed or stocked by shelter response humanitarian agencies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">NFIItems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NaturalHazard -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#NaturalHazard"/>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NaturalHazards -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#NaturalHazards">
+        <rdfs:comment xml:lang="en">NaturalHazards is a term represent a threat of a naturally occurring event that will have a negative effect on people or the environment .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">NaturalHazards</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Needs3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Needs3W">
+        <rdfs:comment xml:lang="en">Cluster Specific humanitarian response information.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">Needs3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NeedsResponse3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#NeedsResponse3W">
+        <rdfs:comment xml:lang="en">Humanitarian needs and response related activities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">NeedsResponse3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NonfoodAidDistributionPoint -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#NonfoodAidDistributionPoint">
+        <rdfs:comment xml:lang="en">NonfoodAidDistributionPoint is a location for distributing or transporting life saving Non Food Item other than food items, also known as NFIs in humaniatarian sphere.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">NonfoodAidDistributionPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Others -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Others">
+        <rdfs:comment xml:lang="en">Others is the class that is used when certain instance does not fit any of the classes. (Source:Ushahidi Haiti)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Others</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PeopleTrapped -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PeopleTrapped">
+        <rdfs:comment xml:lang="en">People found in dangerous stituation might not be able to escape from the place they are.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PeopleTrapped</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PersonsNews -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PersonsNews">
+        <rdfs:comment xml:lang="en">PersonNews is the information about a person&apos;s status, e.g. death, injured, alive etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PersonsNews</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PortOpen -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PortOpen">
+        <rdfs:comment xml:lang="en">PortOpen is the term that indicate a port opening of regular business for receiving humanitarian relief materials.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PortOpen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PowerOutage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PowerOutage">
+        <rdfs:comment xml:lang="en">A PowerOutage is a term which refers to electrical power failure, which means a short- or long-term loss of the electric power to an area.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PowerOutage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PriceGouging -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PriceGouging">
+        <rdfs:comment xml:lang="en">PriceGouging is a pejorative term referring to a situation in which a seller prices goods or commodities much higher than is considered reasonable or fair.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PriceGouging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PsychiatricNeed -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PsychiatricNeed">
+        <rdfs:comment xml:lang="en">PsychiatricNeed is a term indicate that people need medical care for mental disorders.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PsychiatricNeed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#PublicHealth -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#PublicHealth">
+        <rdfs:comment xml:lang="en">PublicHealth is a term that deals with overall health related issues, conerns and initiatives for or in a community .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">PublicHealth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Response3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Response3W">
+        <rdfs:comment xml:lang="en">Cluster Specific humanitarian response information.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">Response3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Riot -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Riot">
+        <rdfs:comment xml:lang="en">A riot is a form of civil disorder characterized often by disorganized groups lashing out in a sudden and intense rash of violence against authority, property or people.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">Riot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#RoadBlocked -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#RoadBlocked">
+        <rdfs:comment xml:lang="en">RoadBlocked indicate a road is blocked by a barricade caused by natural disaster or set up by human.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">RoadBlocked</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#RubbleRemoval -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#RubbleRemoval">
+        <rdfs:comment xml:lang="en">RubbleRemoval is a term about the agreed upon and systamatic disopsal of of broken stone, of irregular size, shape and texture from a locaktion with totally damaged or partially damaged infrastructures.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">RubbleRemoval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#SearchAndRescue -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#SearchAndRescue">
+        <rdfs:comment xml:lang="en">SearchAndRescue is a part of humanitarian relief effort on the immediate on set of disaster where a team of experts try and locate missing persons.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">SearchAndRescue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#SecurityConcern -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#SecurityConcern">
+        <rdfs:comment xml:lang="en">SecurityConcern is a abstract term related to the worries of protection against danger, damage, loss, and criminal activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">SecurityConcern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ServiceAvailable -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ServiceAvailable">
+        <rdfs:comment xml:lang="en">ServiceAvailable is an abstract term that indicates availability of different life saving and sustaining services in a disaster struck location/place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">ServiceAvailable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterActivity -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterActivity">
+        <rdfs:comment xml:lang="en">ShelterActivity is a term that describes Shelter Cluster related humanitarian response.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterAgency -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterAgency">
+        <rdfs:comment xml:lang="en">ShelterAgency is a Shelter Cluster related humanitarian partner or a specific organization involved in shelter related humanitarian response.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterAgency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterDistributionPoint -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterDistributionPoint">
+        <rdfs:comment xml:lang="en">ShelterDistributionPoint is a specific location where humanitarian relief agencies provide shelter assistances as a part of relief distribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterDistributionPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterItems -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterItems">
+        <rdfs:comment xml:lang="en">ShelterItems include, but are not limited to, tents, tarpulins distributed or stocked by shelter response humanitarian agencies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterItems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterNFIItems -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterNFIItems">
+        <rdfs:comment xml:lang="en">ShelterNFIItems define Shelter Cluster related humanitarian relief items (e.g. tents, tarpulins).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterNFIItems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterNeeded -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterNeeded">
+        <rdfs:comment xml:lang="en">ShelterNeeded is a term used to indicate number of emergency life saving basic structures like tents and tarpaulins.</rdfs:comment>
+        <rdfs:comment xml:lang="en">ShelterNeeded records information regarding additional shelter needs as a part of planned relief distribution processes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterNeeded</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterOffered -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterOffered">
+        <rdfs:comment xml:lang="en">ShelterOffered indicates a location where internally displace people have been offered termporary/transitional shelters.</rdfs:comment>
+        <rdfs:comment xml:lang="en">ShelterOffered relates shelter activities when a humanitarian relief agencies provide shelter (e.g. tents, tarps) materials as a part of a relief distribution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterOffered</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#ShelterResponse -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#ShelterResponse">
+        <rdfs:comment xml:lang="en">ShelterResponse is related to activities defining Shelter Clusters&apos; humanitarian response in an emergency.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#IASCClusterSection"/>
+        <rdfs:label xml:lang="en">ShelterResponse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#TheftOfAid -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#TheftOfAid">
+        <rdfs:comment xml:lang="en">TheftOfAid is a term that indicate a form of criminal activity when unknown person(s) steal the relief distribution materials either from gowdown or relief distribution points.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">TheftOfAid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#UnstableStructure -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#UnstableStructure">
+        <rdfs:comment xml:lang="en">UnstableStructure is a term that describe a partially damaged bulidings/structures which is still standing but uninhabitable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">UnstableStructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#UshahidiReport -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#UshahidiReport">
+        <rdfs:comment xml:lang="en">UshahidiReport is a report from Ushahidi, contains simultaneously temporal and geospatial archive of events, based on the local observers&apos; reports.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">UshahidiReport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#VitalLines -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#VitalLines">
+        <rdfs:comment xml:lang="en">Vitallines is an abstract term that refer to particulars that could directly impact human lives.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">VitalLines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#WaterDistributionPoint -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#WaterDistributionPoint">
+        <rdfs:comment xml:lang="en">WaterDistributionPoint is a location for distributing or transporting daily water to the disaster affected communities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">WaterDistributionPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#WaterSanitationAndHygienePromotion -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#WaterSanitationAndHygienePromotion">
+        <rdfs:comment xml:lang="en">WaterSanitationAndHygienePromotion is a term refers to a concept that improving access to safe water and sanitation facilities leads to healthier families and communities. (UNICEF)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">WaterSanitationAndHygienePromotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#WaterShortage -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#WaterShortage">
+        <rdfs:comment xml:lang="en">Watershortage is a term used to refer to the situations that water resources can not meet human demand.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">WaterShortage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#What3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#What3W">
+        <rdfs:comment xml:lang="en">Specific activities in relation to humanitarian response.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">What3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#When3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#When3W">
+        <rdfs:comment xml:lang="en">Specific time in relation to humanitarian response.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">When3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Where3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Where3W">
+        <rdfs:comment xml:lang="en">Specific location(s) in relation to humanitarian response.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">Where3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#Who3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#Who3W">
+        <rdfs:comment xml:lang="en">Specific agency or Organisation humanitarian response information.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">Who3W</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#WhoWhatWhere3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#WhoWhatWhere3W">
+        <rdfs:comment xml:lang="en">Abstract term to describe the collection of which agency is doing what activities and where.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns#WhoWhatWhereSection"/>
+        <rdfs:label xml:lang="en">WaterShortage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#moac:Who3W -->
+
+    <owl:Class rdf:about="http://observedchange.com/moac/ns#moac:Who3W"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:Class rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
+    
+
+
+    <!-- http://purl.org/net/provenance/ns#DataCreation -->
+
+    <owl:Class rdf:about="http://purl.org/net/provenance/ns#DataCreation"/>
+    
+
+
+    <!-- http://purl.org/net/provenance/ns#DataItem -->
+
+    <owl:Class rdf:about="http://purl.org/net/provenance/ns#DataItem"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#int -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#string -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#string"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://kauppinen.net/tomi#me -->
+
+    <owl:NamedIndividual rdf:about="http://kauppinen.net/tomi#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:homepage rdf:resource="http://kauppinen.net/tomi"/>
+        <foaf:name xml:lang="en">Tomi Kauppinen</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#NFINeededAt -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#NFINeededAt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#affectedby -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#affectedby">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#approved -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#approved">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atGeoLocationLatitude -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#atGeoLocationLatitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atGeoLocationLongitude -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#atGeoLocationLongitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#atLocation -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#atLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#belongsToCluster -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#belongsToCluster">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#category -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#category">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#clusterActivity -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#clusterActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countInPipeline -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#countInPipeline">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countInStock -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#countInStock">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countOfAffectedPopulation -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#countOfAffectedPopulation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#countofAffectedHH -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#countofAffectedHH">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#date -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#dateOfDistbn -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#dateOfDistbn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#description -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#distributingPartner -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#distributingPartner">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#has3Wcomponent -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#has3Wcomponent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasNFIItems -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#hasNFIItems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasOrganisationID -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#hasOrganisationID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#hasShelterItems -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#hasShelterItems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#impact -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#impact">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#involvedIn -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#involvedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#organizationName -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#organizationName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#shelterNeededAt -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#shelterNeededAt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#shelterOfferedAt -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#shelterOfferedAt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#supplyingAgency -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#supplyingAgency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#tentDistbn -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#tentDistbn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#title -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns#verified -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns#verified">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://observedchange.com/moac/ns/ -->
+
+    <owl:NamedIndividual rdf:about="http://observedchange.com/moac/ns/">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <dcterm:conformsTo rdf:resource="http://www.w3.org/TR/rdfa-syntax"/>
+        <dcterm:description xml:lang="en"></dcterm:description>
+        <dcterm:description xml:lang="en">Efforts have been made to involve a number of international humanitarian and crowdsourcing volunteering communities to authenticate MOAC usability, functionality and structures. Since, the vocabulary is still evolving, necessary changes based on expert recommendations will be carefully documented and necessary changes will be continuously updated in the same platform.</dcterm:description>
+        <dcterm:title xml:lang="en">Management of a Crisis (MOAC) Vocabulary Specification</dcterm:title>
+        <xhv:stylesheet rdf:resource="http://observedchange.com/tisc/ns/main.css"/>
+        <rdfs:label xml:lang="en">Document that defines the Management of a Crisis Vocabulary</rdfs:label>
+        <foaf:primaryTopic rdf:resource="http://www.observedchange.com/moac/ns#"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.observedchange.com/moac/ns# -->
+
+    <owl:NamedIndividual rdf:about="http://www.observedchange.com/moac/ns#">
+        <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataItem"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataCreation"/>
+        <prv:performedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-29T20:30:00Z</prv:performedAt>
+        <prv:performedBy rdf:resource="http://kauppinen.net/tomi#me"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://purl.org/net/provenance/ns#DataCreation"/>
+        <prv:performedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-01-29T20:30:00Z</prv:performedAt>
+        <prv:performedBy rdf:resource="http://kauppinen.net/tomi#me"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#">
+        <dcterm:description xml:lang="en">MOAC, the Management of a Crisis Vocabulary, is a lightweight vocabulary aiming to provide terms to enable practitioners to relate different &quot;things&quot; in crisis management activities together as Linked Data. The initial MOAC terms originated from the Inter Agency Standing Committee (IASC), Emergency Shelter Cluster in Haiti, UNOCHA 3W Who What Where Contact Database and</dcterm:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#NFINeededAt">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">NFINeededAt relates &quot;where&quot; Non Food Items response might be necessary.</rdfs:comment>
+        <rdfs:label xml:lang="en">NFINeededAt</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#affectedby">
+        <rdfs:comment xml:lang="en">affectedby indicates the relation of people being affected by certain disaster.</rdfs:comment>
+        <rdfs:comment xml:lang="en">affectedby indicates disaster which has influence on population.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">affectedby</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#approved">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">approved is a data property to attest a event or incident or document is true or not.</rdfs:comment>
+        <rdfs:label xml:lang="en">approved</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#atGeoLocationLatitude">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">atGeoLocationLatitude is a data property used to link location or &quot;Where&quot; with specific latitude in the form of decimal degree.</rdfs:comment>
+        <rdfs:label xml:lang="en">atLocation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#atGeoLocationLongitude">
+        <rdfs:label xml:lang="en">atLocation</rdfs:label>
+        <rdfs:comment xml:lang="en">GeoLocationLatitude is a data property used to link location or &quot;Where&quot; with specific longitude in the form of decimal degree.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#atLocation">
+        <rdfs:label xml:lang="en">atLocation</rdfs:label>
+        <rdfs:comment xml:lang="en">atLocation is a data property to attest agency to a certain location.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#belongsToCluster">
+        <rdfs:label xml:lang="en">belongsToCluster</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">belongsToCluster indicates the organisation which belongs to a specific IASC cluster for example, emergency Shelter cluster or Food Cluster.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#category">
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:comment xml:lang="en">category is about the sort of an incident.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#clusterActivity">
+        <rdfs:label xml:lang="en">atLocation</rdfs:label>
+        <rdfs:comment xml:lang="en">clusterActivity is a property to relate humanitarian Clusters with ongoing humanitarian response to meet the needs of affected population.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#countInPipeline">
+        <rdfs:comment xml:lang="en">countInPipeline indicates the number of relief items that are &quot;in the process&quot; of arriving from a different location.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">countInPipeline</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#countInStock">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">countInStock</rdfs:label>
+        <rdfs:comment xml:lang="en">countInStock indicates the number of items currently stockpiled either at a store or at a distribution location.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#countOfAffectedPopulation">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">countOfAffectedPopulation indicates the total number of people affected by a certain disaster.</rdfs:comment>
+        <rdfs:label xml:lang="en">countOfAffectedPopulation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#countofAffectedHH">
+        <rdfs:label xml:lang="en">countofAffectedHH</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">countofAffectedHH indicates total number of House Holds affected by a certain disaster.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#date">
+        <rdfs:comment xml:lang="en">date indicates a particular date.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#dateOfDistbn">
+        <rdfs:comment xml:lang="en">dateOfDistbn indicates a particular date when shelter/NFI items are distributed.</rdfs:comment>
+        <rdfs:label xml:lang="en">dateOfDistbn</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#description">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">description is about the content of an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#distributingPartner">
+        <rdfs:label xml:lang="en">distributingPartner</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">distributingPartner indicates the name of an organisation that is responsible to distribute relief items in a disaster.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#has3Wcomponent">
+        <rdfs:label xml:lang="en">has3Wcomponent</rdfs:label>
+        <rdfs:comment xml:lang="en">has3Wcomponent indicates the four saparate components of 3W i.e Who What Where and When.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#hasNFIItems">
+        <rdfs:comment xml:lang="en">hasNFIItems indicates the name or a type of Non Food Items.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasNFIItems</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#hasOrganisationID">
+        <rdfs:comment xml:lang="en">hasOrganisationID is a unique identification number given to relief agency.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasOrganisationID</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#hasShelterItems">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">hasShelterItems</rdfs:label>
+        <rdfs:comment xml:lang="en">hasShelterItems indicates the name or a type of shelter related items.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#impact">
+        <rdfs:comment xml:lang="en">Impact is the effect or impression of disaster on population or infrastructure</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">impact</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#involvedIn">
+        <rdfs:comment xml:lang="en">involvedIn indicates the agency that is involved with humanitarian activities/response in a disaster.</rdfs:comment>
+        <rdfs:label xml:lang="en">involvedIn</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#organizationName">
+        <rdfs:comment xml:lang="en">organizationName indicates the name of the organisation for a specific IASC cluster like emergency Shelter cluster or Food Cluster.</rdfs:comment>
+        <rdfs:label xml:lang="en">organizationName</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#shelterNeededAt">
+        <rdfs:comment xml:lang="en">shelterNeededAt relates &quot;where&quot; shelter response might be necessary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:label xml:lang="en">shelterNeededAt</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#shelterOfferedAt">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">shelterOfferedAt relates &quot;where&quot; shelter relief agencies provided relief items.</rdfs:comment>
+        <rdfs:label xml:lang="en">shelterOfferedAt</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#supplyingAgency">
+        <rdfs:label xml:lang="en">supplyingAgency</rdfs:label>
+        <rdfs:comment xml:lang="en">supplyingAgency indicates the name of an organisation that is responsible to provide humanitarian relief items.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#tentDistbn">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">tentDistbn relates the amount (count) of shelter items being offered.</rdfs:comment>
+        <rdfs:label xml:lang="en">tentDistbn</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#title">
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:comment xml:lang="en">Title is an identifying name given to an incident.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://observedchange.com/moac/ns#verified">
+        <rdfs:isDefinedBy rdf:resource="http://observedchange.com/moac/ns"/>
+        <rdfs:comment xml:lang="en">verified is a property used in describing if certain information/data has been checked with more than one sources.</rdfs:comment>
+        <rdfs:label xml:lang="en">verified</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
